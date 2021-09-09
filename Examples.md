@@ -139,3 +139,4 @@ Connection: keep-alive
 
 {"result":{"description":"Пока без описания, впредь осторожнее","subject":{"name":"ПП.11.01 Производственная практика (по профилю специальности)","_id":"d1b14bf4f529a8e650481b24f6d34080da4ec24f673bf46845434b6e31f7c825"},"closed":true,"external":false,"_id":"178b6b3d75ba254729d368500bbc5c03630513c2396f45b118b3dffe567be1ff","title":"Это мой двенадцатый дедлайн","endDate":1628764738,"startDate":1631204566,"isClosed":true,"isExternal":false},"error":null}
 ```
+
