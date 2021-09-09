@@ -41,7 +41,7 @@ base URL:     `https://restfulapi.ru/api/v2/`
 ---
 
 # University list [GET]
-`/universities/`  -> [List<University>](./Objects/University.md)
+`/universities/`  -> [List\<University>](./Objects/University.md)
 
 #### GET params:
 *[default list params](./CRUDL.md)*
