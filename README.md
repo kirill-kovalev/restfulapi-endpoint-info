@@ -4,4 +4,3 @@
 3) Информация о возвращаемых типах в файлах в папке [Objects](./Objects)
 4) Список эндпонитонв в файле [EnpointList.md](./EndpointList.md)
 5) Примеры в файле [Examples.md](./Examples.md)
-

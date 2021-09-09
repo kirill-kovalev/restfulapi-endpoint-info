@@ -2,9 +2,12 @@
 
 Для импорта curl запроса в Postman
 1) нажмите кнопку import
+
 ![пикча1](./res/ex_import_1.png)
 2) выберете Raw text
+
 ![пикча2](./res/ex_import_1.png)
+
 3) Импортируйте
 ![пикча3](./res/ex_import_1.png)
 
