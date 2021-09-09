@@ -68,7 +68,7 @@ base URL:     `https://restfulapi.ru/api/v2/`
 ---
 
 # professor list [GET]
-`/universities/{universityId}/professors/` -> [List<SchedUser>](./Objects/SchedUser.md)
+`/universities/{universityId}/professors/` -> [List\<SchedUser>](./Objects/SchedUser.md)
 
 #### GET params:
 *[default list params](./CRUDL.md)*
@@ -83,7 +83,7 @@ base URL:     `https://restfulapi.ru/api/v2/`
 ---
 
 # group list [GET]
-`/universities/{universityId}/groups/` -> [List<SchedUser>](./Objects/SchedUser.md)
+`/universities/{universityId}/groups/` -> [List\<SchedUser>](./Objects/SchedUser.md)
 
 #### GET params:
 *[default list params](./CRUDL.md)*
@@ -108,7 +108,7 @@ base URL:     `https://restfulapi.ru/api/v2/`
 
 ---
 # Schedule [GET]
-`/universities/{universityId}/schedule/{scheduleUserId}`  -> [List<Lesson>](./Objects/Lesson.md)
+`/universities/{universityId}/schedule/{scheduleUserId}`  -> [List\<Lesson>](./Objects/Lesson.md)
 
 **possible errors:**
 
@@ -131,12 +131,12 @@ base URL:     `https://restfulapi.ru/api/v2/`
 
 # Feed (сводка) [GET] Requires X-Session-Id header
  
-`/feed`  -> [List<FeedItem>](./Objects/FeedItem.md)
+`/feed`  -> [List\<FeedItem>](./Objects/FeedItem.md)
 
 ---
 
 # Feed (новостная лента) [GET]  Requires X-Session-Id header
-`/feed/{feedSourceId}/` -> [List<FeedItem>](./Objects/FeedItem.md)
+`/feed/{feedSourceId}/` -> [List\<FeedItem>](./Objects/FeedItem.md)
 
 **possible errors:**
 
@@ -148,7 +148,7 @@ base URL:     `https://restfulapi.ru/api/v2/`
 ---
 
 # Feed sources [GET]  Requires X-Session-Id header
-`/feed/sources/` -> [List<FeedSource>](./Objects/FeedSource.md)
+`/feed/sources/` -> [List\<FeedSource>](./Objects/FeedSource.md)
 
 #### GET params:
 *[default list params](./CRUDL.md)*
@@ -182,7 +182,7 @@ base URL:     `https://restfulapi.ru/api/v2/`
 ---
 
 # Deadlines [GET] Requires X-Session-Id header
-`/deadlines/` -> [List<Deadline>](./Objects/Deadline.md)
+`/deadlines/` -> [List\<Deadline>](./Objects/Deadline.md)
 
 #### GET params:
 *[default list params](./CRUDL.md)* 
@@ -271,7 +271,7 @@ base URL:     `https://restfulapi.ru/api/v2/`
 ---
 
 # Deadline sources [GET] Requires X-Session-Id header
-`/deadlines/sources` -> [List<DeadlineSource>](./Objects/DeadlineSource.md)
+`/deadlines/sources` -> [List\<DeadlineSource>](./Objects/DeadlineSource.md)
 *[default list params](./CRUDL.md)*
 
 **possible errors:**
