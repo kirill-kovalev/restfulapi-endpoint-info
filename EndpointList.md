@@ -7,7 +7,7 @@ base URL:     `https://restfulapi.ru/api/v2/`
 ---
 
 # login - service [POST]
-`/auth/{serviceId}/` -> [AuthObject](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/Common-Objects-4Tznuj2OwpuT)
+`/auth/{serviceId}/` -> [AuthObject](./Objects/Common.md)
 
 #### POST params:
 | param | type | description |
@@ -24,7 +24,7 @@ base URL:     `https://restfulapi.ru/api/v2/`
 
 ---
 # login - vk [POST]
-`/auth/vk/` -> [AuthObject](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/Common-Objects-4Tznuj2OwpuT)
+`/auth/vk/` -> [AuthObject](./Objects/Common.md)
 
 
 #### POST params:
@@ -41,10 +41,10 @@ base URL:     `https://restfulapi.ru/api/v2/`
 ---
 
 # University list [GET]
-`/universities/`  -> [List<University>](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/University)
+`/universities/`  -> [List<University>](./Objects/University.md)
 
 #### GET params:
-*[default list params](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/CRUDL)*
+*[default list params](./CRUDL.md)*
 
 
 
@@ -57,7 +57,7 @@ base URL:     `https://restfulapi.ru/api/v2/`
 ---
 
 # single university [GET]
-`/universities/{universityId}` -> [University](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/University)
+`/universities/{universityId}` -> [University](./Objects/University.md)
 
 **possible errors:**
 
@@ -68,10 +68,10 @@ base URL:     `https://restfulapi.ru/api/v2/`
 ---
 
 # professor list [GET]
-`/universities/{universityId}/professors/` -> [List<SchedUser>](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/SchedUser)
+`/universities/{universityId}/professors/` -> [List<SchedUser>](./Objects/SchedUser.md)
 
 #### GET params:
-*[default list params](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/CRUDL)*
+*[default list params](./CRUDL.md)*
 
 **possible errors:**
 
@@ -83,10 +83,10 @@ base URL:     `https://restfulapi.ru/api/v2/`
 ---
 
 # group list [GET]
-`/universities/{universityId}/groups/` -> [List<SchedUser>](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/SchedUser)
+`/universities/{universityId}/groups/` -> [List<SchedUser>](./Objects/SchedUser.md)
 
 #### GET params:
-*[default list params](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/CRUDL)*
+*[default list params](./CRUDL.md)*
 
 **possible errors:**
 
@@ -97,7 +97,7 @@ base URL:     `https://restfulapi.ru/api/v2/`
 
 ---
 # single schedUser [GET]
-`/universities/{universityId}/schedUsers/{schedUserId}` -> [SchedUser](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/SchedUser)
+`/universities/{universityId}/schedUsers/{schedUserId}` -> [SchedUser](./Objects/SchedUser.md)
 
 **possible errors:**
 
@@ -108,7 +108,7 @@ base URL:     `https://restfulapi.ru/api/v2/`
 
 ---
 # Schedule [GET]
-`/universities/{universityId}/schedule/{scheduleUserId}`  -> [List<Lesson>](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/Lesson)
+`/universities/{universityId}/schedule/{scheduleUserId}`  -> [List<Lesson>](./Objects/Lesson.md)
 
 **possible errors:**
 
@@ -118,7 +118,7 @@ base URL:     `https://restfulapi.ru/api/v2/`
 | not_found (404) | такого шедюзера не существует |
 
 # Lesson [GET]
-`/universities/{universityId}/lessons/{lessonId}`  -> [Lesson](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/Lesson)
+`/universities/{universityId}/lessons/{lessonId}`  -> [Lesson](./Objects/Lesson.md)
 
 **possible errors:**
 
@@ -131,12 +131,12 @@ base URL:     `https://restfulapi.ru/api/v2/`
 
 # Feed (сводка) [GET] Requires X-Session-Id header
  
-`/feed`  -> [List<FeedItem>](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/FeedItem)
+`/feed`  -> [List<FeedItem>](./Objects/FeedItem.md)
 
 ---
 
 # Feed (новостная лента) [GET]  Requires X-Session-Id header
-`/feed/{feedSourceId}/` -> [List<FeedItem>](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/FeedItem)
+`/feed/{feedSourceId}/` -> [List<FeedItem>](./Objects/FeedItem.md)
 
 **possible errors:**
 
@@ -148,10 +148,10 @@ base URL:     `https://restfulapi.ru/api/v2/`
 ---
 
 # Feed sources [GET]  Requires X-Session-Id header
-`/feed/sources/` -> [List<FeedSource>](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/FeedSource)
+`/feed/sources/` -> [List<FeedSource>](./Objects/FeedSource.md)
 
 #### GET params:
-*[default list params](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/CRUDL)*
+*[default list params](./CRUDL.md)*
 
 
 **possible errors:**
@@ -164,7 +164,7 @@ base URL:     `https://restfulapi.ru/api/v2/`
 ---
 
 # single FeedSource [GET; PUT] Requires X-Session-Id header
-`/feed/sources/{feedSourceId}` -> [FeedSource](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/FeedSource)
+`/feed/sources/{feedSourceId}` -> [FeedSource](./Objects/FeedSource.md)
 
 #### PUT params:
 | param | type | description |
@@ -182,10 +182,10 @@ base URL:     `https://restfulapi.ru/api/v2/`
 ---
 
 # Deadlines [GET] Requires X-Session-Id header
-`/deadlines/` -> [List<Deadline>](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/Deadline)
+`/deadlines/` -> [List<Deadline>](./Objects/Deadline.md)
 
 #### GET params:
-*[default list params](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/CRUDL)* 
+*[default list params](./CRUDL.md)* 
 
 | param | type |  description |
 | ----- | ---- | ----------- | 
@@ -202,7 +202,7 @@ base URL:     `https://restfulapi.ru/api/v2/`
 ---
 
 # single Deadline  [POST] Requires X-Session-Id header
-`/deadlines/` -> [Deadline](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/Deadline)
+`/deadlines/` -> [Deadline](./Objects/Deadline.md)
 
 #### POST params:
 
@@ -225,7 +225,7 @@ base URL:     `https://restfulapi.ru/api/v2/`
 
 
 # single Deadline  [GET; DELETE; PUT] Requires X-Session-Id header
-`/deadlines/{deadlineId}/` -> [Deadline](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/Deadline)
+`/deadlines/{deadlineId}/` -> [Deadline](./Objects/Deadline.md)
 
 #### PUT/ POST params:
 
@@ -249,7 +249,7 @@ base URL:     `https://restfulapi.ru/api/v2/`
 ---
 
 # close deadline: [POST] Requires X-Session-Id header
-`/deadlines/{deadlineId}/close`-> [Deadline](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/Deadline)
+`/deadlines/{deadlineId}/close`-> [Deadline](./Objects/Deadline.md)
 
 **possible errors:**
 
@@ -259,7 +259,7 @@ base URL:     `https://restfulapi.ru/api/v2/`
 | forbidden | не передана или передана некорректная сессия (например удаляем дедлайн чужого юзера) |
 
 # restart deadline: [DELETE] Requires X-Session-Id header
-`/deadlines/{deadlineId}/close`-> [Deadline](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/Deadline)
+`/deadlines/{deadlineId}/close`-> [Deadline](./Objects/Deadline.md)
 
 **possible errors:**
 
@@ -271,8 +271,8 @@ base URL:     `https://restfulapi.ru/api/v2/`
 ---
 
 # Deadline sources [GET] Requires X-Session-Id header
-`/deadlines/sources` -> [List<DeadlineSource>](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/DeadlineSource)
-*[default list params](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/CRUDL)*
+`/deadlines/sources` -> [List<DeadlineSource>](./Objects/DeadlineSource.md)
+*[default list params](./CRUDL.md)*
 
 **possible errors:**
 
@@ -284,7 +284,7 @@ base URL:     `https://restfulapi.ru/api/v2/`
 ---
 
 # single Deadline source [GET] Requires X-Session-Id header
-`/deadlines/sources/{SourceId}` -> [DeadlineSource](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/DeadlineSource)
+`/deadlines/sources/{SourceId}` -> [DeadlineSource](./Objects/DeadlineSource.md)
 
 **possible errors:**
 
@@ -296,7 +296,7 @@ base URL:     `https://restfulapi.ru/api/v2/`
 ---
 ---
 # USER [GET; PUT] Requires X-Session-Id header
-`/me` -> [User](https://scheduleapp.jetbrains.space/p/sa/documents/20/a/User)
+`/me` -> [User](./Objects/User.md)
 
 #### PUT params:
 
